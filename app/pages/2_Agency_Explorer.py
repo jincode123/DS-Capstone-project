@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[4]:
 
 
 import streamlit as st
@@ -9,7 +9,7 @@ import requests
 import plotly.express as px
 import plotly.graph_objects as go
 
-API = "http://127.0.0.1:8002"
+API = "https://ds-capstone-project.onrender.com"
 
 @st.cache_data
 def fetch(endpoint):
@@ -151,6 +151,12 @@ if selected_agency:
                 "This agency was excluded from "
                 "clustering analysis (statistical outlier)"
             )
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:

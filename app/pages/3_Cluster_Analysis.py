@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import streamlit as st
@@ -9,7 +9,7 @@ import requests
 import plotly.graph_objects as go
 import pandas as pd
 
-API = "http://127.0.0.1:8002"
+API = "https://ds-capstone-project.onrender.com"
 
 @st.cache_data
 def fetch(endpoint):
@@ -111,6 +111,18 @@ for i, cluster in enumerate(clusters):
                 st.write(f"• {agency}")
 
         st.divider()
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
