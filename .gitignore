@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.ipynb
+*.csv
+output/
+logs/
+run_log.txt
+data/parquet/
+data/analysis_dataset_v1.parquet
+data/master_clean_v1.parquet
+data/master_it_spending.parquet
+data/master_it_spending_new.parquet
+data/forecast_2026_agency.parquet
+data/forecast_2026_aggregate.parquet

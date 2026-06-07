@@ -1,0 +1,13 @@
+{
+  "net_spend_B": 579.6,
+  "total_obligations_B": 602.1,
+  "total_deobligations_B": -22.5,
+  "total_agencies": 72,
+  "total_vendors": 18886,
+  "total_psc": 118,
+  "total_transactions": 825963,
+  "date_from": "2016-01-01",
+  "date_to": "2026-05-30",
+  "peak_year": 2024,
+  "peak_year_spend_B": 73.4
+}

@@ -1,0 +1,652 @@
+{
+  "Agency for International Development": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Committee for Purchase from People Who Are Blind or Severely Disabled": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Consumer Financial Protection Bureau": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Consumer Product Safety Commission": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Corporation for National and Community Service": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Council of the Inspectors General on Integrity and Efficiency": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Court Services and Offender Supervision Agency": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Agriculture": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Commerce": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Defense": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Education": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Energy": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Health and Human Services": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Homeland Security": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Housing and Urban Development": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Justice": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of State": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Transportation": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of Veterans Affairs": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of the Interior": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Department of the Treasury": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "District of Columbia Courts": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Environmental Protection Agency": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Equal Employment Opportunity Commission": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Executive Office of the President": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Export-Import Bank of the United States": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Federal Communications Commission": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Federal Election Commission": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Federal Trade Commission": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "General Services Administration": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Government Accountability Office": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "International Trade Commission": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Merit Systems Protection Board": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "National Aeronautics and Space Administration": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "National Archives and Records Administration": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "National Endowment for the Humanities": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "National Gallery of Art": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "National Science Foundation": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "National Transportation Safety Board": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Nuclear Regulatory Commission": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Peace Corps": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Pension Benefit Guaranty Corporation": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Railroad Retirement Board": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Selective Service System": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Small Business Administration": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Smithsonian Institution": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Social Security Administration": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "U.S. Agency for Global Media": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "U.S. International Development Finance Corporation": {
+    "cluster_id": 0,
+    "cluster_name": "Mainstream IT Procurers",
+    "saas_pct": 23.3,
+    "legacy_pct": 5.5,
+    "vendor_hhi": 0.089,
+    "sept_spike": 21.3,
+    "growth_rate": 0.056,
+    "framework_pct": 80.1
+  },
+  "Commodity Futures Trading Commission": {
+    "cluster_id": 1,
+    "cluster_name": "Legacy Burdened",
+    "saas_pct": 11.6,
+    "legacy_pct": 27.3,
+    "vendor_hhi": 0.18,
+    "sept_spike": 21.5,
+    "growth_rate": -0.019,
+    "framework_pct": 89.2
+  },
+  "Department of Labor": {
+    "cluster_id": 1,
+    "cluster_name": "Legacy Burdened",
+    "saas_pct": 11.6,
+    "legacy_pct": 27.3,
+    "vendor_hhi": 0.18,
+    "sept_spike": 21.5,
+    "growth_rate": -0.019,
+    "framework_pct": 89.2
+  },
+  "Institute of Museum and Library Services": {
+    "cluster_id": 1,
+    "cluster_name": "Legacy Burdened",
+    "saas_pct": 11.6,
+    "legacy_pct": 27.3,
+    "vendor_hhi": 0.18,
+    "sept_spike": 21.5,
+    "growth_rate": -0.019,
+    "framework_pct": 89.2
+  },
+  "Millennium Challenge Corporation": {
+    "cluster_id": 1,
+    "cluster_name": "Legacy Burdened",
+    "saas_pct": 11.6,
+    "legacy_pct": 27.3,
+    "vendor_hhi": 0.18,
+    "sept_spike": 21.5,
+    "growth_rate": -0.019,
+    "framework_pct": 89.2
+  },
+  "Office of Personnel Management": {
+    "cluster_id": 1,
+    "cluster_name": "Legacy Burdened",
+    "saas_pct": 11.6,
+    "legacy_pct": 27.3,
+    "vendor_hhi": 0.18,
+    "sept_spike": 21.5,
+    "growth_rate": -0.019,
+    "framework_pct": 89.2
+  },
+  "Overseas Private Investment Corporation": {
+    "cluster_id": 1,
+    "cluster_name": "Legacy Burdened",
+    "saas_pct": 11.6,
+    "legacy_pct": 27.3,
+    "vendor_hhi": 0.18,
+    "sept_spike": 21.5,
+    "growth_rate": -0.019,
+    "framework_pct": 89.2
+  },
+  "Securities and Exchange Commission": {
+    "cluster_id": 1,
+    "cluster_name": "Legacy Burdened",
+    "saas_pct": 11.6,
+    "legacy_pct": 27.3,
+    "vendor_hhi": 0.18,
+    "sept_spike": 21.5,
+    "growth_rate": -0.019,
+    "framework_pct": 89.2
+  },
+  "Administrative Conference of the U.S.": {
+    "cluster_id": 2,
+    "cluster_name": "Concentrated & Contracting",
+    "saas_pct": 4.8,
+    "legacy_pct": 1.6,
+    "vendor_hhi": 0.591,
+    "sept_spike": 6.0,
+    "growth_rate": -0.125,
+    "framework_pct": 10.3
+  },
+  "Morris K. Udall and Stewart L. Udall Foundation": {
+    "cluster_id": 2,
+    "cluster_name": "Concentrated & Contracting",
+    "saas_pct": 4.8,
+    "legacy_pct": 1.6,
+    "vendor_hhi": 0.591,
+    "sept_spike": 6.0,
+    "growth_rate": -0.125,
+    "framework_pct": 10.3
+  },
+  "United States Trade and Development Agency": {
+    "cluster_id": 2,
+    "cluster_name": "Concentrated & Contracting",
+    "saas_pct": 4.8,
+    "legacy_pct": 1.6,
+    "vendor_hhi": 0.591,
+    "sept_spike": 6.0,
+    "growth_rate": -0.125,
+    "framework_pct": 10.3
+  },
+  "Defense Nuclear Facilities Safety Board": {
+    "cluster_id": 3,
+    "cluster_name": "September Rushers",
+    "saas_pct": 8.9,
+    "legacy_pct": 5.2,
+    "vendor_hhi": 0.335,
+    "sept_spike": 59.4,
+    "growth_rate": 0.095,
+    "framework_pct": 76.5
+  },
+  "Federal Labor Relations Authority": {
+    "cluster_id": 3,
+    "cluster_name": "September Rushers",
+    "saas_pct": 8.9,
+    "legacy_pct": 5.2,
+    "vendor_hhi": 0.335,
+    "sept_spike": 59.4,
+    "growth_rate": 0.095,
+    "framework_pct": 76.5
+  },
+  "Federal Mediation and Conciliation Service": {
+    "cluster_id": 3,
+    "cluster_name": "September Rushers",
+    "saas_pct": 8.9,
+    "legacy_pct": 5.2,
+    "vendor_hhi": 0.335,
+    "sept_spike": 59.4,
+    "growth_rate": 0.095,
+    "framework_pct": 76.5
+  },
+  "John F. Kennedy Center for the Performing Arts": {
+    "cluster_id": 3,
+    "cluster_name": "September Rushers",
+    "saas_pct": 8.9,
+    "legacy_pct": 5.2,
+    "vendor_hhi": 0.335,
+    "sept_spike": 59.4,
+    "growth_rate": 0.095,
+    "framework_pct": 76.5
+  },
+  "National Endowment for the Arts": {
+    "cluster_id": 3,
+    "cluster_name": "September Rushers",
+    "saas_pct": 8.9,
+    "legacy_pct": 5.2,
+    "vendor_hhi": 0.335,
+    "sept_spike": 59.4,
+    "growth_rate": 0.095,
+    "framework_pct": 76.5
+  },
+  "National Labor Relations Board": {
+    "cluster_id": 3,
+    "cluster_name": "September Rushers",
+    "saas_pct": 8.9,
+    "legacy_pct": 5.2,
+    "vendor_hhi": 0.335,
+    "sept_spike": 59.4,
+    "growth_rate": 0.095,
+    "framework_pct": 76.5
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "total_anomalies": 4,
+  "method": "Cluster-aware Euclidean distance (threshold: mean + 1.5\u03c3)",
+  "anomalies": [
+    {
+      "agency": "Railroad Retirement Board",
+      "cluster": "Mainstream IT Procurers",
+      "distance": 3.731,
+      "type": "Positive",
+      "reason": "SaaS adoption 67.9% \u2014 3\u00d7 cluster average",
+      "insight": "Hidden modernisation champion \u2014 highest SaaS adoption in Mainstream cluster"
+    },
+    {
+      "agency": "Committee for Purchase from People Who Are Blind or Severely Disabled",
+      "cluster": "Mainstream IT Procurers",
+      "distance": 3.497,
+      "type": "Negative",
+      "reason": "Vendor HHI 0.49 \u2014 5\u00d7 cluster average",
+      "insight": "Extreme vendor concentration risk despite framework usage"
+    },
+    {
+      "agency": "District of Columbia Courts",
+      "cluster": "Mainstream IT Procurers",
+      "distance": 3.282,
+      "type": "Negative",
+      "reason": "Zero framework contract usage (cluster average 80.1%)",
+      "insight": "Procurement process outlier \u2014 unique legal jurisdiction"
+    },
+    {
+      "agency": "Selective Service System",
+      "cluster": "Mainstream IT Procurers",
+      "distance": 3.256,
+      "type": "Negative",
+      "reason": "Zero framework contract usage (cluster average 80.1%)",
+      "insight": "Procurement process outlier \u2014 direct purchasing only"
+    }
+  ]
+}
