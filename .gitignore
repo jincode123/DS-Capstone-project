@@ -13,3 +13,5 @@ data/master_it_spending.parquet
 data/master_it_spending_new.parquet
 data/forecast_2026_agency.parquet
 data/forecast_2026_aggregate.parquet
+data/research_df_final.parquet
+data/cluster_assignments.parquet
