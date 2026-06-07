@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[ ]:
 
 
 import streamlit as st
 import requests
 import plotly.express as px
 
-API = "http://127.0.0.1:8002"
+API = "https://ds-capstone-project.onrender.com"
 
 @st.cache_data
 def fetch(endpoint):
