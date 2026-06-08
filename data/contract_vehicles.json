@@ -1,0 +1,14 @@
+{
+  "types": [
+    "DELIVERY ORDER",
+    "BPA CALL",
+    "DEFINITIVE CONTRACT",
+    "PURCHASE ORDER"
+  ],
+  "spend": [
+    451.3,
+    79.1,
+    58.5,
+    13.2
+  ]
+}

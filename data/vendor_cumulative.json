@@ -1,0 +1,44 @@
+{
+  "ranks": [
+    1,
+    5,
+    10,
+    25,
+    50,
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000,
+    18493
+  ],
+  "cumulative_pct": [
+    4.2,
+    16.1,
+    24.6,
+    38.7,
+    49.0,
+    58.8,
+    72.0,
+    82.0,
+    90.5,
+    97.3,
+    99.4,
+    100.0
+  ],
+  "vendor_names": [
+    "LEIDOS, INC.",
+    "PERATON ENTERPRISE SOLUTI",
+    "DELL MARKETING L.P.",
+    "EMERGENT, LLC",
+    "GENERAL DYNAMICS INFORMAT",
+    "TEKSYNAP CORPORATION",
+    "SEGUE TECHNOLOGIES, INC",
+    "DECISIONPOINT CORPORATION",
+    "PENGUIN COMPUTING, INC.",
+    "AMERICAN DATA SOLUTIONS L",
+    "JDL DIGITAL SYSTEMS, INC.",
+    "WORKWEEK SOLUTIONS LLC"
+  ]
+}

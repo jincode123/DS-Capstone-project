@@ -1,0 +1,36 @@
+{
+  "agencies": [
+    "National Aeronautics and Space Administration",
+    "Dept of Energy",
+    "Dept of Transportation",
+    "Dept of the Interior",
+    "Social Security Administration",
+    "Dept of Agriculture",
+    "Dept of Commerce",
+    "Dept of State",
+    "Dept of Justice",
+    "Dept of the Treasury",
+    "Dept of Homeland Security",
+    "General Services Administration",
+    "Dept of Veterans Affairs",
+    "Dept of Health and Human Services",
+    "Dept of Defense"
+  ],
+  "spend": [
+    5.1,
+    6.2,
+    9.2,
+    10.0,
+    11.1,
+    12.4,
+    13.9,
+    16.6,
+    18.5,
+    23.8,
+    46.6,
+    47.7,
+    56.2,
+    58.6,
+    215.4
+  ]
+}
