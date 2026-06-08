@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[4]:
 
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 import json
 import os
 import sys
 
-# Add api directory to path so routers can be imported
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from routers import overview, agency, cluster, anomaly
@@ -21,9 +21,18 @@ app = FastAPI(
 )
 
 # ── Paths ────────────────────────────────────────────────
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR   = os.path.join(BASE_DIR, "data")
+CHARTS_DIR = os.path.join(DATA_DIR, "charts")
 
+# ── Serve chart images as static files ──────────────────
+app.mount(
+    "/charts",
+    StaticFiles(directory=CHARTS_DIR),
+    name="charts"
+)
+
+# ── Load JSON helper ─────────────────────────────────────
 def load_json(filename):
     with open(os.path.join(DATA_DIR, filename)) as f:
         return json.load(f)
