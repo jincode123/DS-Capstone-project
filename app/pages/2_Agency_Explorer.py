@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[4]:
 
 
 import streamlit as st
@@ -184,7 +184,7 @@ if selected_agency:
                 "annual_by_category", {}
             )
 
-            if cat:
+            if cat and len(cat.get("years", [])) > 0:
                 fig_trend = go.Figure()
                 fig_trend.add_trace(go.Bar(
                     x=cat["years"],
@@ -225,8 +225,9 @@ if selected_agency:
                 )
             else:
                 st.info(
-                    "Category data not available "
-                    "for this agency"
+                    "Category data not available — "
+                    "API is updating. Please refresh "
+                    "in a moment."
                 )
 
         with col_right:
