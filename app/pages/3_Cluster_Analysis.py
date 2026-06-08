@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[4]:
 
 
 import streamlit as st
 import requests
-import plotly.express as px
-import plotly.graph_objects as go
-import pandas as pd
 
 API = "https://ds-capstone-project.onrender.com"
 
@@ -81,16 +78,6 @@ CLUSTER_POLICY = {
     3: "Procurement planning reform required. Introduce quarterly spend targets to reduce September dependency."
 }
 
-RADAR_LABELS = [
-    "SaaS%", "Legacy%", "HHI",
-    "Sept%", "Growth", "Framework%"
-]
-
-FEATURES = [
-    "saas_pct", "legacy_pct", "vendor_hhi",
-    "sept_spike", "growth_rate", "framework_pct"
-]
-
 # ── Page header ──────────────────────────────────────────
 st.title("🗂️ Cluster Analysis")
 st.caption(
@@ -120,9 +107,13 @@ with st.expander("⚙️ Methodology"):
     - Growth Rate — linear trend slope normalised by mean spend
     - Framework Discipline % — share of spend through framework contracts
 
-    **Pre-processing:** Isolation Forest outlier removal → StandardScaler → PCA (4 components, 82.5% variance)  
-    **k=4 chosen over k=3** for greater analytical interpretability despite slightly lower silhouette score (0.369 vs 0.411)  
-    **All features computed on net spend** (obligations minus deobligations)
+    **Pre-processing:** Isolation Forest outlier removal → 
+    StandardScaler → PCA (4 components, 82.5% variance)  
+    **k=4 chosen over k=3** for greater analytical 
+    interpretability despite slightly lower silhouette 
+    score (0.369 vs 0.411)  
+    **All features computed on net spend** 
+    (obligations minus deobligations)
     """)
 
 st.divider()
@@ -153,7 +144,8 @@ for i, cluster in enumerate(clusters):
             f"<b>{icon} Cluster {cid}</b><br>"
             f"<b>{cluster['cluster_name']}</b><br>"
             f"<span style='font-size:0.85em'>"
-            f"n = {cluster['n_agencies']} agencies</span><br>"
+            f"n = {cluster['n_agencies']} agencies"
+            f"</span><br>"
             f"<span style='font-size:0.8em;color:{color}'>"
             f"{CLUSTER_KEY_STAT[cid]}</span>"
             f"</div>",
@@ -162,101 +154,65 @@ for i, cluster in enumerate(clusters):
 
 st.divider()
 
-# ── Section 2: Cluster profiles (Technical) ─────────────
-st.subheader("📡 Cluster Profiles — Procurement Radar")
+# ── Section 2: All 4 radar charts (exact notebook) ──────
+st.subheader("📡 Cluster Profiles")
 st.caption(
-    "Each radar shows the centroid (average) profile "
-    "of that cluster across 6 procurement features. "
-    "Outward = more of each feature."
+    "Radar charts show the normalised centroid profile "
+    "of each cluster across 6 procurement features. "
+    "Outward = more of each feature. "
+    "Charts reproduced exactly from analysis notebooks."
 )
 
-col_left, col_right = st.columns(2)
-
-for i, cluster in enumerate(clusters):
-    cid    = cluster["cluster_id"]
-    color  = CLUSTER_COLORS[cid]
-    col    = col_left if i % 2 == 0 else col_right
-    values = [cluster[f] for f in FEATURES]
-
-    with col:
-        st.markdown(
-            f"**{CLUSTER_ICONS[cid]} Cluster {cid}: "
-            f"{cluster['cluster_name']} "
-            f"(n={cluster['n_agencies']})**"
-        )
-
-        fig_radar = go.Figure()
-        fig_radar.add_trace(go.Scatterpolar(
-            r=values + [values[0]],
-            theta=RADAR_LABELS + [RADAR_LABELS[0]],
-            fill="toself",
-            fillcolor=color,
-            opacity=0.3,
-            line=dict(color=color, width=2.5),
-            name=cluster["cluster_name"]
-        ))
-        fig_radar.update_layout(
-            polar=dict(
-                radialaxis=dict(visible=True)
-            ),
-            showlegend=False,
-            height=320,
-            margin=dict(l=40, r=40, t=30, b=30)
-        )
-        st.plotly_chart(
-            fig_radar,
-            use_container_width=True,
-            key=f"radar_{cid}"
-        )
-        st.caption(CLUSTER_INTERPRETATIONS[cid])
-        st.divider()
-
-# ── Section 3: Cluster comparison (Non-Technical) ───────
-st.subheader("📊 Cluster Comparison")
-st.caption(
-    "How do the four clusters differ across "
-    "key procurement dimensions?"
-)
-
-comparison_rows = []
-feature_display = {
-    "saas_pct":      "SaaS Adoption (%)",
-    "legacy_pct":    "Legacy Burden (%)",
-    "vendor_hhi":    "Vendor HHI",
-    "sept_spike":    "September Spike (%)",
-    "growth_rate":   "Growth Rate",
-    "framework_pct": "Framework Discipline (%)"
-}
-
-for feat, label in feature_display.items():
-    row = {"Feature": label}
-    for cluster in clusters:
-        cid = cluster["cluster_id"]
-        name = cluster["cluster_name"].replace(
-            " & ", " &\n"
-        )
-        row[f"C{cid}: {cluster['cluster_name']}"] = round(
-            cluster[feat], 2
-        )
-    comparison_rows.append(row)
-
-comp_df = pd.DataFrame(comparison_rows)
-st.dataframe(
-    comp_df,
-    use_container_width=True,
-    hide_index=True
+st.image(
+    f"{API}/charts/cluster_all_radar.png",
+    use_container_width=True
 )
 
 st.divider()
 
-# ── Section 4: Policy recommendations ───────────────────
+# ── Section 3: Individual cluster profiles ───────────────
+st.subheader("🔍 Individual Cluster Profiles")
+
+col_left, col_right = st.columns(2)
+
+for i, cluster in enumerate(clusters):
+    cid  = cluster["cluster_id"]
+    icon = CLUSTER_ICONS[cid]
+    col  = col_left if i % 2 == 0 else col_right
+
+    with col:
+        st.markdown(
+            f"**{icon} Cluster {cid}: "
+            f"{cluster['cluster_name']} "
+            f"(n={cluster['n_agencies']})**"
+        )
+        st.image(
+            f"{API}/charts/cluster_{cid}_radar.png",
+            use_container_width=True
+        )
+        st.caption(CLUSTER_INTERPRETATIONS[cid])
+        st.divider()
+
+# ── Section 4: Cluster comparison (exact notebook) ──────
+st.subheader("📊 Cluster Comparison")
+st.caption(
+    "Key metrics across all four agency archetypes — "
+    "reproduced exactly from analysis notebooks."
+)
+
+st.image(
+    f"{API}/charts/cluster_comparison.png",
+    use_container_width=True
+)
+
+st.divider()
+
+# ── Section 5: Policy recommendations ───────────────────
 st.subheader("💡 Policy Recommendations")
 
 for cluster in clusters:
-    cid   = cluster["cluster_id"]
-    color = CLUSTER_COLORS[cid]
-    icon  = CLUSTER_ICONS[cid]
-
+    cid  = cluster["cluster_id"]
+    icon = CLUSTER_ICONS[cid]
     st.markdown(
         f"**{icon} Cluster {cid} — "
         f"{cluster['cluster_name']}**"
@@ -265,7 +221,7 @@ for cluster in clusters:
 
 st.divider()
 
-# ── Section 5: Agency lists ──────────────────────────────
+# ── Section 6: Agency lists ──────────────────────────────
 st.subheader("🏢 Agencies by Cluster")
 st.caption(
     "Expand each cluster to see which "
@@ -273,30 +229,24 @@ st.caption(
 )
 
 for cluster in clusters:
-    cid   = cluster["cluster_id"]
-    icon  = CLUSTER_ICONS[cid]
+    cid  = cluster["cluster_id"]
+    icon = CLUSTER_ICONS[cid]
 
     with st.expander(
         f"{icon} Cluster {cid}: "
         f"{cluster['cluster_name']} "
         f"(n={cluster['n_agencies']})"
     ):
-        cols = st.columns(2)
+        cols     = st.columns(2)
         agencies = sorted(cluster["agencies"])
-        mid = len(agencies) // 2
+        mid      = len(agencies) // 2
 
         with cols[0]:
-            for agency in agencies[:mid]:
-                st.write(f"• {agency}")
+            for ag in agencies[:mid]:
+                st.write(f"• {ag}")
         with cols[1]:
-            for agency in agencies[mid:]:
-                st.write(f"• {agency}")
-
-
-# In[ ]:
-
-
-
+            for ag in agencies[mid:]:
+                st.write(f"• {ag}")
 
 
 # In[ ]:
