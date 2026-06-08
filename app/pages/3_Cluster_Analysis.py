@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[1]:
 
 
 import streamlit as st
@@ -154,24 +154,14 @@ for i, cluster in enumerate(clusters):
 
 st.divider()
 
-# ── Section 2: All 4 radar charts (exact notebook) ──────
-st.subheader("📡 Cluster Profiles")
+# ── Section 2: Individual cluster profiles ───────────────
+st.subheader("📡 Individual Cluster Profiles")
 st.caption(
     "Radar charts show the normalised centroid profile "
     "of each cluster across 6 procurement features. "
     "Outward = more of each feature. "
     "Charts reproduced exactly from analysis notebooks."
 )
-
-st.image(
-    f"{API}/charts/cluster_all_radar.png",
-    use_container_width=True
-)
-
-st.divider()
-
-# ── Section 3: Individual cluster profiles ───────────────
-st.subheader("🔍 Individual Cluster Profiles")
 
 col_left, col_right = st.columns(2)
 
@@ -193,13 +183,12 @@ for i, cluster in enumerate(clusters):
         st.caption(CLUSTER_INTERPRETATIONS[cid])
         st.divider()
 
-# ── Section 4: Cluster comparison (exact notebook) ──────
+# ── Section 3: Cluster comparison ───────────────────────
 st.subheader("📊 Cluster Comparison")
 st.caption(
     "Key metrics across all four agency archetypes — "
     "reproduced exactly from analysis notebooks."
 )
-
 st.image(
     f"{API}/charts/cluster_comparison.png",
     use_container_width=True
@@ -207,7 +196,7 @@ st.image(
 
 st.divider()
 
-# ── Section 5: Policy recommendations ───────────────────
+# ── Section 4: Policy recommendations ───────────────────
 st.subheader("💡 Policy Recommendations")
 
 for cluster in clusters:
@@ -221,7 +210,7 @@ for cluster in clusters:
 
 st.divider()
 
-# ── Section 6: Agency lists ──────────────────────────────
+# ── Section 5: Agency lists ──────────────────────────────
 st.subheader("🏢 Agencies by Cluster")
 st.caption(
     "Expand each cluster to see which "
