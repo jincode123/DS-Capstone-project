@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[4]:
 
 
 import streamlit as st
@@ -72,16 +72,25 @@ st.divider()
 st.subheader("💬 Closing Statement")
 st.markdown(
     """
-    Federal IT procurement is not just a financial story —
-    it is a story about how government modernises and serves
-    its citizens through technology.
+    When I started this project, I wanted to understand
+    where billions of dollars in federal IT spending actually
+    go — and whether data science could reveal patterns that
+    are invisible in raw transaction data.
 
-    This project demonstrates that procurement behaviour
-    is **measurable, comparable, and improvable** — and
-    the data to do so is already publicly available.
-    The analytical framework developed here provides a
-    foundation for evidence-based procurement policy
-    that goes beyond aggregate spend figures.
+    What surprised me most was not the scale of the spending,
+    but the diversity of behaviour beneath it. Agencies with
+    similar budgets and missions procure technology in
+    fundamentally different ways — and those differences are
+    measurable, comparable, and actionable.
+
+    The four procurement archetypes, the hidden modernisation
+    champion, and the September spending pattern are not just
+    analytical findings — they are starting points for
+    conversations about how federal IT procurement can improve.
+
+    Procurement behaviour is measurable. The data is publicly
+    available. The insights are actionable. That is the core
+    contribution of this project.
     """
 )
 
