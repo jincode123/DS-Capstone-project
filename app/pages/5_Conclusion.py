@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[5]:
 
 
 import streamlit as st
@@ -10,22 +10,31 @@ import streamlit as st
 st.title("📝 Conclusion")
 st.divider()
 
-# ── Brief recap ──────────────────────────────────────────
-st.subheader("🎯 Project Summary")
+# ── Closing Statement ────────────────────────────────────
+st.subheader("💬 Closing Statement")
 st.markdown(
-    "This project applied data science and machine learning "
-    "to 825,963 federal IT procurement transactions from "
-    "USASpending.gov to answer three questions — how federal "
-    "IT spending has evolved, what procurement archetypes "
-    "exist across agencies, and which agencies stand out "
-    "from their peers. The result is an interactive "
-    "analytical platform that translates $579.6 billion "
-    "of procurement data into evidence-based insights for "
-    "policy makers and IT modernisation teams."
+    """
+    When I started this project, I wanted to understand
+    where billions of dollars in federal IT spending actually
+    go — and whether data science could reveal patterns that
+    are invisible in raw transaction data.
+
+    What surprised me most was not the scale of the spending,
+    but the diversity of behaviour beneath it. Agencies with
+    similar budgets and missions procure technology in
+    fundamentally different ways — and those differences are
+    measurable, comparable, and actionable.
+
+    The four procurement archetypes, the hidden modernisation
+    champion, and the September spending pattern are not just
+    analytical findings — they are starting points for
+    conversations about how federal IT procurement can improve.
+
+    Procurement behaviour is measurable. The data is publicly
+    available. The insights are actionable. That is the core
+    contribution of this project.
+    """
 )
-
-st.divider()
-
 # ── Future Work ──────────────────────────────────────────
 st.subheader("🚀 Future Work")
 
@@ -67,32 +76,6 @@ with col_right:
     )
 
 st.divider()
-
-# ── Closing Statement ────────────────────────────────────
-st.subheader("💬 Closing Statement")
-st.markdown(
-    """
-    When I started this project, I wanted to understand
-    where billions of dollars in federal IT spending actually
-    go — and whether data science could reveal patterns that
-    are invisible in raw transaction data.
-
-    What surprised me most was not the scale of the spending,
-    but the diversity of behaviour beneath it. Agencies with
-    similar budgets and missions procure technology in
-    fundamentally different ways — and those differences are
-    measurable, comparable, and actionable.
-
-    The four procurement archetypes, the hidden modernisation
-    champion, and the September spending pattern are not just
-    analytical findings — they are starting points for
-    conversations about how federal IT procurement can improve.
-
-    Procurement behaviour is measurable. The data is publicly
-    available. The insights are actionable. That is the core
-    contribution of this project.
-    """
-)
 
 st.markdown(
     "<div style='text-align:center; padding: 20px; "
