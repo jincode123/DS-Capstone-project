@@ -32,11 +32,10 @@ st.markdown("""
 Federal IT procurement represents one of the largest 
 concentrations of technology spending in the world. 
 This project applies data science and machine learning 
-to procurement transactions sourced from USASpending.gov 
-to uncover hidden trends, evaluate procurement discipline, 
-and understand technology transition strategies across 
-federal agencies — providing insights to support future 
-decisions and improvements.
+to procurement transactions to uncover hidden trends,
+evaluate procurement discipline, and understand technology
+transition strategies across federal agencies — providing
+insights to support future decisions and improvements.
 
 **Three analytical questions drive this work:**
 

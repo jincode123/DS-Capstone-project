@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[4]:
 
 
 import streamlit as st
@@ -22,9 +22,10 @@ Welcome to the Federal IT Procurement Dashboard.
 Use the sidebar to navigate between pages:
 
 - 📊 **Overview Dashboard** — Key metrics and spending trends
-- 🔍 **Agency Explorer** — Explore individual agency profiles
 - 🗂️ **Cluster Analysis** — Four agency procurement archetypes
 - ⚠️ **Anomaly Detection** — Agencies behaving differently from peers
+- 🔍 **Agency Explorer** — Explore individual agency profiles
+- 📝 **Conclusion** — Findings, policy implications and future work
 """)
 
 
