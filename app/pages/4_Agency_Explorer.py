@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[2]:
 
 
 import streamlit as st
@@ -98,6 +98,17 @@ ANOMALY_AGENCIES = {
     }
 }
 
+# 7 category groups matching Overview page
+CATEGORY_GROUPS = [
+    ("it_services_labor",   "IT Services & Labor",       "#378ADD"),
+    ("software_apps",       "Software & Applications",   "#1ac938"),
+    ("infrastructure_hw",   "Infrastructure & Hardware", "#e8000b"),
+    ("cloud_platform",      "Cloud & Platform",          "#9B59B6"),
+    ("security_compliance", "Security & Compliance",     "#00B0B9"),
+    ("telecom_networks",    "Telecom & Networks",        "#FF9500"),
+    ("other_it",            "Other / Unclassified IT",   "#888780"),
+]
+
 # ── Page header ──────────────────────────────────────────
 st.title("🔍 Agency Explorer")
 st.caption(
@@ -148,7 +159,7 @@ if selected_agency:
                 )
 
         # ── Headline metrics ─────────────────────────────
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
             st.metric(
                 "Net Spend (2016-2026)",
@@ -165,10 +176,30 @@ if selected_agency:
                 f"{agency_data['total_transactions']:,}"
             )
         with col4:
+            hhi = agency_data.get("vendor_hhi", None)
+            if hhi is None:
+                hhi = agency_data.get(
+                    "cluster", {}
+                ).get("vendor_hhi", None)
             st.metric(
-                "Deobligation Rate",
-                f"{agency_data['deob_rate_pct']}%",
-                help="Deobligations as % of obligations"
+                "Vendor Concentration (HHI)",
+                f"{hhi:.3f}" if hhi is not None else "N/A",
+                help="Herfindahl-Hirschman Index — "
+                     "higher = more concentrated. "
+                     "0.25+ indicates high concentration"
+            )
+        with col5:
+            framework = agency_data.get("framework_pct", None)
+            if framework is None:
+                framework = agency_data.get(
+                    "cluster", {}
+                ).get("framework_pct", None)
+            st.metric(
+                "Framework Rate",
+                f"{framework:.1f}%" if framework is not None
+                else "N/A",
+                help="% of spend through framework contracts "
+                     "(Delivery Orders + BPA Calls)"
             )
 
         st.divider()
@@ -186,24 +217,16 @@ if selected_agency:
 
             if cat and len(cat.get("years", [])) > 0:
                 fig_trend = go.Figure()
-                fig_trend.add_trace(go.Bar(
-                    x=cat["years"],
-                    y=cat["new_tech"],
-                    name="New Tech",
-                    marker_color="#1ac938"
-                ))
-                fig_trend.add_trace(go.Bar(
-                    x=cat["years"],
-                    y=cat["it_labour"],
-                    name="IT Labour",
-                    marker_color="#378ADD"
-                ))
-                fig_trend.add_trace(go.Bar(
-                    x=cat["years"],
-                    y=cat["old_tech"],
-                    name="Old Tech",
-                    marker_color="#e8000b"
-                ))
+
+                for key, label, color in CATEGORY_GROUPS:
+                    if key in cat:
+                        fig_trend.add_trace(go.Bar(
+                            x=cat["years"],
+                            y=cat[key],
+                            name=label,
+                            marker_color=color
+                        ))
+
                 fig_trend.update_layout(
                     barmode="stack",
                     plot_bgcolor="white",
@@ -215,7 +238,8 @@ if selected_agency:
                     legend=dict(
                         orientation="h",
                         yanchor="bottom",
-                        y=1.02
+                        y=1.02,
+                        font=dict(size=8)
                     )
                 )
                 st.plotly_chart(
