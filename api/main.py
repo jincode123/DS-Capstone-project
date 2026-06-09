@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[5]:
 
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Response
 from fastapi.staticfiles import StaticFiles
 import json
 import os
@@ -75,6 +75,15 @@ def home():
 @app.get("/health")
 def health():
     return {"status": "healthy"}
+
+# ── HEAD endpoints for UptimeRobot free tier ─────────────
+@app.head("/")
+def home_head():
+    return Response(status_code=200)
+
+@app.head("/health")
+def health_head():
+    return Response(status_code=200)
 
 
 # In[ ]:
